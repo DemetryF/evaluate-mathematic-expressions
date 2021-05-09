@@ -1,36 +1,33 @@
-Калькулятор. Выполнение математического выражения.
+## The mathematical expression evaluator.
 
-# Запуск:
+### How to compile ?
 
-Скачиваем:
+run
+```bash
+./compile.sh
+```
 
-```$ git clone https://github.com/DemetryF/evaluate-mathematic-expressions calc```
+### How to use it ?
 
-```$ cd calc```
+`You should be run it after compilation`
+```bash
+ ./calc
+```
 
-Компилируем: 
-
-```$ ./compile.sh```
-
-Запускаем:
-
-```$ ./calc```
-
-# Что оно умеет?
-+ имеется 7 операторов:
-
-    - сумма "+"
-    - разность "-"
-    - частное "/"
-    - произведение "*"
-    - деление по модулю "%"
-    - деление нацело "\\"
-    - возведение в степень "^"
-
-+ Объединение выражения: "()"
-+ Нецелые числа: "1.2"
-+ Константы:
-    - число Эйлера "e"
-    - число пи "pi"
-+ Возможность задавать свои константы используя флаг "-d": "-dvarname=value"
-+ Функции: "sin(2)". Присутствуют все (почти) функции, присутствующие в [стандарте](https://ru.wikipedia.org/wiki/Math.h) си (раздел "базовые функции").
+### What it can do?
++ It has 7 operators:
+    - plus "**+**"
+    - minus "**-**"
+    - division "**/**"
+    - multiply "**\***"
+    - modulo division "**%**"
+    - integer division "**\\**"
+    - exponentiation "**^**"
++  precedence expressions: "**()**"
++ Float integers: "**1.2**"
++ Constants:
+    - euler number "**e**"
+    - PI "**pi**"
++ You can set your own constants "-d": "-dvarname=value"
++ Functions: "sin(2)". 
+*Exists almost all functions from [standart](https://en.wikipedia.org/wiki/C_mathematical_functions) **C** (partition "basic functions").*
